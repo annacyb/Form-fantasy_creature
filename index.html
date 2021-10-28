@@ -24,11 +24,14 @@
             <!-- <legend>Fantasy creatures creation form</legend> -->
             
             <section class="section1-mainInfo">
-                <label for="name" class="title-label">Name</label>
+                <label for="name" class="title-label">Name *</label>
                 <input name="name" id="name" type="text" required>
 
                 <label for="species" class="title-label">Species</label>
                 <input name="species" id="species" type="text" placeholder="Dragon, snail, etc">
+
+                <label for="age" class="title-label">Age *</label>
+                <input name="age" id="age" type="number" required min="0">
 
                 <label for="mythology" class="title-label">Mythology origin</label>
                 <section class="radios">
@@ -49,8 +52,6 @@
                     </label>
                 </section>
 
-                <label for="age" class="title-label">Age</label>
-                <input name="age" id="age" type="number" required min="0">
             </section>
 
             <section class="divider">
@@ -61,8 +62,8 @@
             
 
             <section class="section2-look">
-                <label for="selectColor" class="title-label">Select main color</label>
-                <select id="selectColor">
+                <label for="selectColor" class="title-label">Select main color *</label>
+                <select id="selectColor" required>
                     <optgroup label="All colors">
                     <option><div class="colorCircle" style="background-color: blue;"></div>
                       Transparent</option>
@@ -83,11 +84,7 @@
                     </optgroup>
                 </select>
 
-                <label for="textures" class="title-label">Textures</label>
-                <input name="textures" id="textures" type="text">
-            
-
-                <label for="horns" class="title-label">Horns</label>
+                <label for="horns" class="title-label">Horns *</label>
                 <section class="radios">
                     <label for="horns-Yes">
                         <input id="horns-Yes" name="horns" type="radio" />Yes
@@ -96,6 +93,9 @@
                         <input id="horns-No" name="horns" type="radio" />No
                     </label>
                 </section>
+
+                <label for="textures" class="title-label">Textures</label>
+                <input name="textures" id="textures" type="text">
 
             </section>
             
@@ -106,7 +106,7 @@
             </section>
 
             <section class="section3-character">
-                <label for="alignment" class="title-label">Alignment - Good/Evil</label>
+                <label for="alignment" class="title-label">Alignment - Good/Evil *</label>
                 <input name="alignment" id="alignment" type="range" min="1" max="10" value="1" step="1" required>
 
 

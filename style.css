@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
 
-body {
-    /* font-family: system-ui; */
+html {
     font-size: 16px;
+}
+
+body {
     display: grid;
     place-items: center;
     background-color: #f0bda1;
@@ -51,9 +53,11 @@ fieldset {
 
 h1 {
     padding-top: 20px;
-    font-size: 20px;
+    font-size: 1.2rem;
     letter-spacing: 1px;
     font-family: "Fira Sans", sans-serif;
+    opacity: 0.9;
+    align-self: center;
 }
 
 .section1-mainInfo,
@@ -69,7 +73,7 @@ h1 {
 
 h3 {
     font-family: "Fira Sans", sans-serif;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     white-space: nowrap;
     padding-right: 5%;
     padding-left: 5%;
@@ -78,6 +82,9 @@ h3 {
     margin-top: 0;
     margin-bottom: 0;
     color: #d87a48;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .divider {
@@ -94,11 +101,16 @@ h3 {
     margin-top: 0.5rem;
     /* background-color: rgb(0, 84, 122); */
     background-color: #c58661;
+    opacity: 0.6;
 }
 
 .title-label {
     margin-top: 20px;
     padding-bottom: 5px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+    opacity: 0.75;
 }
 
 .radios {
@@ -119,9 +131,59 @@ h3 {
 
 /* ----- Input styling ----- */
 
-/* input {
+input {
+    font-size: max(16px, 1em);
+}
+
+input[type="text"] {
     -webkit-appearance: none;
     appearance: none;
+}
+
+input[type="text"],
+input[type="number"] {
+    padding: 8px 20px 8px 13px;
+    border-radius: 4px;
+    border: 0;
+    background: #f7e9e2;
+    font-size: 0.9rem;
+    resize: none;
+    font-weight: 400;
+    color: rgb(44, 44, 44);
+    border: 1px solid #f7e9e2;
+
+    /* -webkit-appearance: none;
+    outline: none; */
+    transition: all 0.25s ease;
+}
+
+input[type="text"]:invalid,
+input[type="number"]:invalid {
+    border: 1px solid red;
+}
+
+input[type="text"]:valid,
+input[type="number"]:valid {
+    border: 1px solid green;
+}
+
+input:hover {
+    background: #f3e2d9;
+    border: 1px solid grey;
+}
+
+input:focus {
+    background: #f3e2d9;
+    border: 1px solid #f0cab6;
+}
+
+/* input[type="range"]:hover {
+    -webkit-appearance: none;
+    appearance: none;
+} */
+/* 
+input[type="range"]:focus-within {
+    accent-color: #003852;
 } */
 
 /* input:checked::before {
@@ -136,7 +198,7 @@ input:checked::after {
     
 } */
 input[type="text"]:valid {
-    color: orange;
+    /* color: orange; */
 }
 /* :hover
 :focus
