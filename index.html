@@ -12,9 +12,11 @@
 <body>
     <main></main>
     <div class="bg-photo"></div>
+    
     <form action="">
         <fieldset>
             <h1>Create your fantasy creature</h1>
+            <div class="line"></div>
             <!-- <legend>Fantasy creatures creation form</legend> -->
 
             <label for="name" class="title-label">Name</label>
@@ -24,25 +26,28 @@
             <input name="species" id="species" type="text" placeholder="Dragon, snail, etc">
 
             <label for="mythology" class="title-label">Mythology origin</label>
-            
-            <label for="radio1-Mythology">
-                <input id="radio1-Mythology" name="radio-Mythology" type="radio" />Africa
-            </label>
-            <label for="radio2-Mythology">
-                <input id="radio2-Mythology" name="radio-Mythology" type="radio" />Americas
-            </label>
-            <label for="radio3-Mythology">
-                <input id="radio3-Mythology" name="radio-Mythology" type="radio" />Asia
-            </label>
-            <label for="radio4-Mythology">
-                <input id="radio4-Mythology" name="radio-Mythology" type="radio" />Europe
-            </label>
-            <label for="radio5-Mythology">
-                <input id="radio5-Mythology" name="radio-Mythology" type="radio" />Oceania
-            </label>
-            
+            <section class="radios">
+                <label for="radio1-Mythology">
+                    <input id="radio1-Mythology" name="radio-Mythology" type="radio" />Africa
+                </label>
+                <label for="radio2-Mythology">
+                    <input id="radio2-Mythology" name="radio-Mythology" type="radio" />Americas
+                </label>
+                <label for="radio3-Mythology">
+                    <input id="radio3-Mythology" name="radio-Mythology" type="radio" />Asia
+                </label>
+                <label for="radio4-Mythology">
+                    <input id="radio4-Mythology" name="radio-Mythology" type="radio" />Europe
+                </label>
+                <label for="radio5-Mythology">
+                    <input id="radio5-Mythology" name="radio-Mythology" type="radio" />Oceania
+                </label>
+            </section>
+
             <label for="age" class="title-label">Age</label>
             <input name="age" id="age" type="number" required min="0">
+
+            <div class="line"></div>
 
             <label for="selectColor" class="title-label">Select main color</label>
               <select id="selectColor">
@@ -68,14 +73,18 @@
 
             <label for="textures" class="title-label">Textures</label>
             <input name="textures" id="textures" type="text">
+            
+            <div class="line"></div>
 
             <label for="horns" class="title-label">Horns</label>
-            <label for="horns-Yes">
-                <input id="horns-Yes" name="horns" type="radio" />Yes
-            </label>
-            <label for="horns-No">
-                <input id="horns-No" name="horns" type="radio" />No
-            </label>
+            <section class="radios">
+                <label for="horns-Yes">
+                    <input id="horns-Yes" name="horns" type="radio" />Yes
+                </label>
+                <label for="horns-No">
+                    <input id="horns-No" name="horns" type="radio" />No
+                </label>
+            </section>
 
             <label for="alignment" class="title-label">Alignment - Good/Evil</label>
             <input name="alignment" id="alignment" type="range" min="1" max="10" value="1" step="1" required>
