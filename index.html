@@ -16,114 +16,132 @@
     <form action="">
         <fieldset>
             <h1>Create your fantasy creature</h1>
-            <div class="line"></div>
+            <section class="divider">
+                <div class="line"></div>
+                <h3>Main info</h2>
+                <div class="line"></div>
+            </section>
             <!-- <legend>Fantasy creatures creation form</legend> -->
+            
+            <section class="section1-mainInfo">
+                <label for="name" class="title-label">Name</label>
+                <input name="name" id="name" type="text" required>
 
-            <label for="name" class="title-label">Name</label>
-            <input name="name" id="name" type="text" required>
+                <label for="species" class="title-label">Species</label>
+                <input name="species" id="species" type="text" placeholder="Dragon, snail, etc">
 
-            <label for="species" class="title-label">Species</label>
-            <input name="species" id="species" type="text" placeholder="Dragon, snail, etc">
+                <label for="mythology" class="title-label">Mythology origin</label>
+                <section class="radios">
+                    <label for="radio1-Mythology">
+                        <input id="radio1-Mythology" name="radio-Mythology" type="radio" />Africa
+                    </label>
+                    <label for="radio2-Mythology">
+                        <input id="radio2-Mythology" name="radio-Mythology" type="radio" />Americas
+                    </label>
+                    <label for="radio3-Mythology">
+                        <input id="radio3-Mythology" name="radio-Mythology" type="radio" />Asia
+                    </label>
+                    <label for="radio4-Mythology">
+                        <input id="radio4-Mythology" name="radio-Mythology" type="radio" />Europe
+                    </label>
+                    <label for="radio5-Mythology">
+                        <input id="radio5-Mythology" name="radio-Mythology" type="radio" />Oceania
+                    </label>
+                </section>
 
-            <label for="mythology" class="title-label">Mythology origin</label>
-            <section class="radios">
-                <label for="radio1-Mythology">
-                    <input id="radio1-Mythology" name="radio-Mythology" type="radio" />Africa
-                </label>
-                <label for="radio2-Mythology">
-                    <input id="radio2-Mythology" name="radio-Mythology" type="radio" />Americas
-                </label>
-                <label for="radio3-Mythology">
-                    <input id="radio3-Mythology" name="radio-Mythology" type="radio" />Asia
-                </label>
-                <label for="radio4-Mythology">
-                    <input id="radio4-Mythology" name="radio-Mythology" type="radio" />Europe
-                </label>
-                <label for="radio5-Mythology">
-                    <input id="radio5-Mythology" name="radio-Mythology" type="radio" />Oceania
-                </label>
+                <label for="age" class="title-label">Age</label>
+                <input name="age" id="age" type="number" required min="0">
             </section>
 
-            <label for="age" class="title-label">Age</label>
-            <input name="age" id="age" type="number" required min="0">
+            <section class="divider">
+                <div class="line"></div>
+                <h3>Look</h2>
+                <div class="line"></div>
+            </section>
+            
 
-            <div class="line"></div>
-
-            <label for="selectColor" class="title-label">Select main color</label>
-              <select id="selectColor">
-                <optgroup label="All colors">
-                  <option><div class="colorCircle" style="background-color: blue;"></div>
+            <section class="section2-look">
+                <label for="selectColor" class="title-label">Select main color</label>
+                <select id="selectColor">
+                    <optgroup label="All colors">
+                    <option><div class="colorCircle" style="background-color: blue;"></div>
                       Transparent</option>
-                  <option>Multicolored</option>
-                  <option>Black</option>
-                  <option>Blue</option>
-                  <option>Brown</option>
-                  <option>Gold</option>
-                  <option>Green</option>
-                  <option>Grey</option>
-                  <option>Orange</option>
-                  <option>Pink</option>
-                  <option>Purple</option>
-                  <option>Red</option>
-                  <option>Silver</option>
-                  <option>White</option>
-                  <option>Yellow</option>
-                </optgroup>
-              </select>
+                    <option>Multicolored</option>
+                    <option>Black</option>
+                    <option>Blue</option>
+                    <option>Brown</option>
+                    <option>Gold</option>
+                    <option>Green</option>
+                    <option>Grey</option>
+                    <option>Orange</option>
+                    <option>Pink</option>
+                    <option>Purple</option>
+                    <option>Red</option>
+                    <option>Silver</option>
+                    <option>White</option>
+                    <option>Yellow</option>
+                    </optgroup>
+                </select>
 
-            <label for="textures" class="title-label">Textures</label>
-            <input name="textures" id="textures" type="text">
+                <label for="textures" class="title-label">Textures</label>
+                <input name="textures" id="textures" type="text">
             
-            <div class="line"></div>
 
-            <label for="horns" class="title-label">Horns</label>
-            <section class="radios">
-                <label for="horns-Yes">
-                    <input id="horns-Yes" name="horns" type="radio" />Yes
-                </label>
-                <label for="horns-No">
-                    <input id="horns-No" name="horns" type="radio" />No
-                </label>
+                <label for="horns" class="title-label">Horns</label>
+                <section class="radios">
+                    <label for="horns-Yes">
+                        <input id="horns-Yes" name="horns" type="radio" />Yes
+                    </label>
+                    <label for="horns-No">
+                        <input id="horns-No" name="horns" type="radio" />No
+                    </label>
+                </section>
+
+            </section>
+            
+            <section class="divider">
+                <div class="line"></div>
+                <h3>Character and abilities</h2>
+                <div class="line"></div>
             </section>
 
-            <label for="alignment" class="title-label">Alignment - Good/Evil</label>
-            <input name="alignment" id="alignment" type="range" min="1" max="10" value="1" step="1" required>
+            <section class="section3-character">
+                <label for="alignment" class="title-label">Alignment - Good/Evil</label>
+                <input name="alignment" id="alignment" type="range" min="1" max="10" value="1" step="1" required>
 
 
-            <label for="abilities" class="title-label">Abilities</label>
+                <label for="abilities" class="title-label">Abilities</label>
             
-            <label for="checkbox1-Abilities">
-                <input id="checkbox1-Abilities" name="checkbox-Abilities" type="checkbox" />Breathing fire
-            </label>
-            <label for="checkbox2-Abilities">
-                <input id="checkbox2-Abilities" name="checkbox-Abilities" type="checkbox" />Changing body shape
-            </label>
-            <label for="checkbox3-Abilities">
-                <input id="checkbox3-Abilities" name="checkbox-Abilities" type="checkbox" />Changing color
-            </label>
-            <label for="checkbox4-Abilities">
-                <input id="checkbox4-Abilities" name="checkbox-Abilities" type="checkbox" />Flying
-            </label>
-            <label for="checkbox5-Abilities">
-                <input id="checkbox5-Abilities" name="checkbox-Abilities" type="checkbox" />Immortality
-            </label>
-            <label for="checkbox6-Abilities">
-                <input id="checkbox7-Abilities" name="checkbox-Abilities" type="checkbox" />Magic
-            </label>
-            <label for="checkbox7-Abilities">
-                <input id="checkbox7-Abilities" name="checkbox-Abilities" type="checkbox" />Super intelligence
-            </label>
-            <label for="checkbox8-Abilities">
-                <input id="checkbox8-Abilities" name="checkbox-Abilities" type="checkbox" />Super strength
-            </label>
+                <label for="checkbox1-Abilities">
+                    <input id="checkbox1-Abilities" name="checkbox-Abilities" type="checkbox" />Breathing fire
+                </label>
+                <label for="checkbox2-Abilities">
+                    <input id="checkbox2-Abilities" name="checkbox-Abilities" type="checkbox" />Changing body shape
+                </label>
+                <label for="checkbox3-Abilities">
+                    <input id="checkbox3-Abilities" name="checkbox-Abilities" type="checkbox" />Changing color
+                </label>
+                <label for="checkbox4-Abilities">
+                    <input id="checkbox4-Abilities" name="checkbox-Abilities" type="checkbox" />Flying
+                </label>
+                <label for="checkbox5-Abilities">
+                    <input id="checkbox5-Abilities" name="checkbox-Abilities" type="checkbox" />Immortality
+                </label>
+                 <label for="checkbox6-Abilities">
+                    <input id="checkbox7-Abilities" name="checkbox-Abilities" type="checkbox" />Magic
+                </label>
+                <label for="checkbox7-Abilities">
+                    <input id="checkbox7-Abilities" name="checkbox-Abilities" type="checkbox" />Super intelligence
+                </label>
+                <label for="checkbox8-Abilities">
+                    <input id="checkbox8-Abilities" name="checkbox-Abilities" type="checkbox" />Super strength
+                </label>
 
-            <label for="text-Abilities" class="title-label">Other abilities</label>
-            <input name="text-Abilities" id="textAbilities" type="text">
-
+                <label for="text-Abilities" class="title-label">Other abilities</label>
+                <input name="text-Abilities" id="textAbilities" type="text">
+            </section>
 
             <button type="submit">Submit</button>
-
-
         </fieldset>
 
     </form>
