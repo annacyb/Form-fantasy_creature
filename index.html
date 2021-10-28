@@ -11,10 +11,11 @@
 
 <body>
     <main></main>
-
+    <div class="bg-photo"></div>
     <form action="">
-        <fieldset style="display:flex; flex-direction: column;">
-            <legend>Fantasy creatures creation form</legend>
+        <fieldset>
+            <h1>Create your fantasy creature</h1>
+            <!-- <legend>Fantasy creatures creation form</legend> -->
 
             <label for="name" class="title-label">Name</label>
             <input name="name" id="name" type="text" required>
@@ -41,7 +42,7 @@
             </label>
             
             <label for="age" class="title-label">Age</label>
-            <input name="age" id="age" type="number" required>
+            <input name="age" id="age" type="number" required min="0">
 
             <label for="selectColor" class="title-label">Select main color</label>
               <select id="selectColor">
