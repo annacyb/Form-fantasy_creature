@@ -24,10 +24,11 @@
             <!-- <legend>Fantasy creatures creation form</legend> -->
             
             <section class="section1-mainInfo">
-                <label for="name" class="title-label">Name *</label>
+                <label for="name" class="title-label">Name of a creature *</label>
                 <input name="name" id="name" type="text" required>
 
                 <label for="species" class="title-label">Species</label>
+                <p class="secondaryLabel">Separate words with commas</p>
                 <input name="species" id="species" type="text" placeholder="Dragon, snail, etc">
 
                 <label for="age" class="title-label">Age *</label>
@@ -62,12 +63,11 @@
             
 
             <section class="section2-look">
-                <label for="selectColor" class="title-label">Select main color *</label>
-                <select id="selectColor" required>
+                <label for="color" class="title-label">Select main color *</label>
+                <select id="color" required>
                     <optgroup label="All colors">
-                    <option><div class="colorCircle" style="background-color: blue;"></div>
-                      Transparent</option>
-                    <option>Multicolored</option>
+                    <option><span class="colorCircle" style="background-color: blue;"></span>Transparent</option>
+                    <option><i class="colorCircle" style="background-color: blue;"></i>Multicolored</option>
                     <option>Black</option>
                     <option>Blue</option>
                     <option>Brown</option>
@@ -95,7 +95,13 @@
                 </section>
 
                 <label for="textures" class="title-label">Textures</label>
-                <input name="textures" id="textures" type="text">
+            
+                <label for="textures-fur">
+                    <input id="textures-fur" name="textures" type="checkbox" />Fur
+                </label>
+                <label for="textures-scale">
+                    <input id="textures-scale" name="textures" type="checkbox" />Scale
+                </label>
 
             </section>
             

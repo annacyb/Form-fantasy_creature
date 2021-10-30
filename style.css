@@ -130,6 +130,10 @@ h3 {
 /* END - CHECK THAT OUT */
 
 /* ----- Input styling ----- */
+/* input {
+    -webkit-appearance: none;
+    appearance: none;
+} */
 
 input {
     font-size: max(16px, 1em);
@@ -177,10 +181,6 @@ input:focus {
     border: 1px solid #f0cab6;
 }
 
-/* input[type="range"]:hover {
-    -webkit-appearance: none;
-    appearance: none;
-} */
 /* 
 input[type="range"]:focus-within {
     accent-color: #003852;
@@ -212,4 +212,12 @@ input[type="text"]:valid {
     height: 10px;
     width: 10px;
     border-radius: 50px;
+}
+
+.secondaryLabel {
+    font-size: 0.8rem;
+    opacity: 0.6;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
 }
