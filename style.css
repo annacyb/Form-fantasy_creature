@@ -161,6 +161,19 @@ input[type="number"] {
     transition: all 0.25s ease;
 }
 
+input[type="select"] {
+    background: #f7e9e2;
+    font-size: 0.9rem;
+    resize: none;
+    font-weight: 400;
+    color: rgb(44, 44, 44);
+    border: 1 px solid #f7e9e2;
+    transition: all 0.25s ease;
+    height: 35px;
+    border-radius: 4px;
+    border: 1px solid #f7e9e2;
+}
+
 input[type="text"]:invalid,
 input[type="number"]:invalid {
     border: 1px solid red;
@@ -197,9 +210,11 @@ input:checked::after {
 /* input:valid {
     
 } */
-input[type="text"]:valid {
-    /* color: orange; */
-}
+
+/* input[type="text"]:valid {
+    color: orange;
+} */
+
 /* :hover
 :focus
 :focus-within
@@ -220,4 +235,21 @@ input[type="text"]:valid {
     padding: 0;
     margin: 0;
     margin-bottom: 10px;
+}
+
+#submitButton {
+    padding: 8px 20px 8px 13px;
+    border-radius: 4px;
+    background: #d87a48;
+    font-size: 0.9rem;
+    resize: none;
+    font-weight: 400;
+    color: white;
+    border: 0px;
+    transition: all 0.25s ease 0s;
+}
+
+#submitButton:hover {
+    background: #c46836;
+    cursor: pointer;
 }

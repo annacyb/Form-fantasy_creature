@@ -13,7 +13,7 @@
     <main></main>
     <div class="bg-photo"></div>
     
-    <form action="">
+    <form>
         <fieldset>
             <h1>Create your fantasy creature</h1>
             <section class="divider">
@@ -37,19 +37,19 @@
                 <label for="mythology" class="title-label">Mythology origin</label>
                 <section class="radios">
                     <label for="radio1-Mythology">
-                        <input id="radio1-Mythology" name="radio-Mythology" type="radio" />Africa
+                        <input id="radio1-Mythology" name="radioMythology" type="radio" />Africa
                     </label>
                     <label for="radio2-Mythology">
-                        <input id="radio2-Mythology" name="radio-Mythology" type="radio" />Americas
+                        <input id="radio2-Mythology" name="radioMythology" type="radio" />Americas
                     </label>
                     <label for="radio3-Mythology">
-                        <input id="radio3-Mythology" name="radio-Mythology" type="radio" />Asia
+                        <input id="radio3-Mythology" name="radioMythology" type="radio" />Asia
                     </label>
                     <label for="radio4-Mythology">
-                        <input id="radio4-Mythology" name="radio-Mythology" type="radio" />Europe
+                        <input id="radio4-Mythology" name="radioMythology" type="radio" />Europe
                     </label>
                     <label for="radio5-Mythology">
-                        <input id="radio5-Mythology" name="radio-Mythology" type="radio" />Oceania
+                        <input id="radio5-Mythology" name="radioMythology" type="radio" />Oceania
                     </label>
                 </section>
 
@@ -65,7 +65,7 @@
             <section class="section2-look">
                 <label for="color" class="title-label">Select main color *</label>
                 <select id="color" required>
-                    <optgroup label="All colors">
+                    <!-- <optgroup label="All colors"> -->
                     <option><span class="colorCircle" style="background-color: blue;"></span>Transparent</option>
                     <option><i class="colorCircle" style="background-color: blue;"></i>Multicolored</option>
                     <option>Black</option>
@@ -81,16 +81,16 @@
                     <option>Silver</option>
                     <option>White</option>
                     <option>Yellow</option>
-                    </optgroup>
+                    <!-- </optgroup> -->
                 </select>
 
                 <label for="horns" class="title-label">Horns *</label>
                 <section class="radios">
                     <label for="horns-Yes">
-                        <input id="horns-Yes" name="horns" type="radio" />Yes
+                        <input id="horns-Yes" name="horns" type="radio"/>Yes
                     </label>
                     <label for="horns-No">
-                        <input id="horns-No" name="horns" type="radio" />No
+                        <input id="horns-No" name="horns" type="radio"/>No
                     </label>
                 </section>
 
@@ -147,7 +147,7 @@
                 <input name="text-Abilities" id="textAbilities" type="text">
             </section>
 
-            <button type="submit">Submit</button>
+            <button id="submitButton" type="submit">Create creature</button>
         </fieldset>
 
     </form>
